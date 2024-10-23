@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  backend:
+    image: "leui/tcc-backend:latest"
+    ports:
+      - "3200:3200"
+    env_file:
+      - ./env/backend.dev.env
+  # frontend:
+  #   image: "leui/tcc-frontend:latest"
+  #   ports:
+  #     - "3000:3000"
+  #   stdin_open: true
+  #   tty: true
+  #   depends_on:
+  #     - backend
